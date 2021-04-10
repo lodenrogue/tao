@@ -10,7 +10,7 @@ tao_text_location = '/var/tao/taoTeChing.json'
 def run():
     chapters = get_chapters()
 
-    if len(sys.argv) is 1:
+    if len(sys.argv) == 1:
         random_chapter = random.randint(0, len(chapters) - 1)
         print_chapter(chapters, random_chapter)
     else:
